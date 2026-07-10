@@ -1,0 +1,9 @@
+services:
+  template-vike-lite-solid-daisyui-hono:
+    container_name: template-vike-lite-solid-daisyui-hono
+    image: template-vike-lite-solid-daisyui-hono
+    ports:
+      - 3000:3000
+    restart: always
+    # Add env vars as needed
+    # environment:
