@@ -30,7 +30,7 @@ yarn dev
 ```
 
 ### ▲ Deploy/Config Vercel
-See [Vercel Guide](/vercel/README.VERCEL.md)
+See [Vercel Guide](/vercel/VERCEL.md)
 
 ### ▲ Deploy/Config Docker
 See [Docker Guide](/docker/DOCKER.md)
