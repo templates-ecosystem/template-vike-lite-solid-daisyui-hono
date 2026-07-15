@@ -10,8 +10,7 @@ export default {
   plugins: [
     tailwindcss(),
     vikeLite({
-      // Enable with Docker
-      // ...(process.env.IS_DOCKER === 'true' && { serverEntry: '../docker/serverEntryDocker' })
+      serverEntry: 'server/index.ts'
     }),
     vikeLiteSolid(),
     ...process.env.NODE_ENV === 'production' ? [
