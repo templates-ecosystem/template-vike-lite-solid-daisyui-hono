@@ -6,7 +6,7 @@ const apiRoutes = new Hono()
 
 apiRoutes.post('/api/:functionName', async (c: Context) => {
   const functionName = c.req.param('functionName') as keyof typeof api
-  if (!(functionName in api)) {
+  if (!Object.hasOwn(api, functionName)) {
     return c.json({ error: 'Function not found' }, 400)
   }
   try {

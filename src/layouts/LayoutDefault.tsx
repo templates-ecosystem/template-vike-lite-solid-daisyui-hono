@@ -40,7 +40,7 @@ function Content(props: { children: JSX.Element }) {
   )
 }
 
-export function LayoutDefault(props: { children?: JSX.Element }) {
+export function LayoutDefault(props: { children: JSX.Element }) {
   return (
     <div
       style={{
