@@ -291,6 +291,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/css-tree@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "@eslint/css-tree@npm:4.0.4"
+  dependencies:
+    mdn-data: "npm:2.28.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/36ff53bc88f051a94770bde8eb857626a2134d5703dcdb6de719123db16ab11f5c34e57f8c8536c9c3269eb0e10485823be9cb0d3cb386126688a53b51d0ecb0
+  languageName: node
+  linkType: hard
+
 "@eslint/object-schema@npm:^3.0.5":
   version: 3.0.5
   resolution: "@eslint/object-schema@npm:3.0.5"
@@ -315,12 +325,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hono/node-server@npm:^2.0.8":
-  version: 2.0.8
-  resolution: "@hono/node-server@npm:2.0.8"
+"@hono/node-server@npm:^2.0.9":
+  version: 2.0.9
+  resolution: "@hono/node-server@npm:2.0.9"
   peerDependencies:
     hono: ^4
-  checksum: 10c0/2284799e7ea8c3ea18dcd29fbc523792d7e42768f11dff8a937ce2e4ec965785552da4e9649354b00079243946bd9f65d23b8d9b923cef4984175e507398bb72
+  checksum: 10c0/019840873e6cfe6792aa8557fbddf07ddbc8052263d420d3f69a8ecd41dc586e5e61f696fb4f17e6674908b4fdfc9114c8174b769993011db43008d2e955df29
   languageName: node
   linkType: hard
 
@@ -1720,6 +1730,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"entities@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "entities@npm:4.5.0"
+  checksum: 10c0/5b039739f7621f5d1ad996715e53d964035f75ad3b9a4d38c6b3804bb226e282ffeae2443624d8fdd9c47d8e926ae9ac009c54671243f0c3294c26af7cc85250
+  languageName: node
+  linkType: hard
+
 "entities@npm:^6.0.0":
   version: 6.0.1
   resolution: "entities@npm:6.0.1"
@@ -1796,16 +1813,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^71.1.0":
-  version: 71.1.0
-  resolution: "eslint-plugin-unicorn@npm:71.1.0"
+"eslint-plugin-unicorn@npm:^72.0.0":
+  version: 72.0.0
+  resolution: "eslint-plugin-unicorn@npm:72.0.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.9.1"
+    "@eslint/css-tree": "npm:^4.0.4"
     browserslist: "npm:^4.28.4"
     change-case: "npm:^5.4.4"
     ci-info: "npm:^4.4.0"
     core-js-compat: "npm:^3.49.0"
     detect-indent: "npm:^7.0.2"
+    entities: "npm:^4.5.0"
     find-up-simple: "npm:^1.0.1"
     globals: "npm:^17.7.0"
     indent-string: "npm:^5.0.0"
@@ -1817,9 +1836,10 @@ __metadata:
     reserved-identifiers: "npm:^1.2.0"
     semver: "npm:^7.8.5"
     strip-indent: "npm:^4.1.1"
+    yaml: "npm:^2.9.0"
   peerDependencies:
     eslint: ">=10.4"
-  checksum: 10c0/389cc27c8e64093abd4260c22817391775748bdfc5b23f047fe65ab48d5d2bae6c491afae9beb7578064c3862e9aca8c3f3aac151110f207c63119a84ac48d38
+  checksum: 10c0/1c59258dfd86a00f72dd68096bc7ec6678299d3ba955a226f5693b0757f9a4eea1ae05d6b8056a94e499a5b1023d0f4a032dfb6c28f5f666439da98805f7a68f
   languageName: node
   linkType: hard
 
@@ -2725,6 +2745,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mdn-data@npm:2.28.1":
+  version: 2.28.1
+  resolution: "mdn-data@npm:2.28.1"
+  checksum: 10c0/bdcb43bb4471495133259c8f0b4747e0f2633a06da1b346097aa5d6020a194efcb7fbed3bf0d8adbe7b3bcb831c42a5e01485588528135f85314485d031929a8
+  languageName: node
+  linkType: hard
+
 "merge-anything@npm:^5.1.7":
   version: 5.1.7
   resolution: "merge-anything@npm:5.1.7"
@@ -3616,7 +3643,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "template-vike-lite-solid-daisyui-hono@workspace:."
   dependencies:
-    "@hono/node-server": "npm:^2.0.8"
+    "@hono/node-server": "npm:^2.0.9"
     "@tailwindcss/vite": "npm:^4.3.2"
     "@types/node": "npm:^26.1.1"
     "@yarnpkg/sdks": "npm:^3.3.0"
@@ -3624,15 +3651,15 @@ __metadata:
     eslint: "npm:^10.7.0"
     eslint-plugin-solid: "npm:^0.14.5"
     eslint-plugin-tailwindcss: "npm:^4.2.0"
-    eslint-plugin-unicorn: "npm:^71.1.0"
+    eslint-plugin-unicorn: "npm:^72.0.0"
     hono: "npm:^4.12.30"
     solid-js: "npm:^1.9.14"
     standaloner: "npm:^0.3.3"
     tailwindcss: "npm:^4.3.2"
     typescript: "npm:^6.0.3"
     typescript-eslint: "npm:^8.64.0"
-    vike-lite: "npm:^1.14.0"
-    vike-lite-solid: "npm:^1.9.3"
+    vike-lite: "npm:^1.15.3"
+    vike-lite-solid: "npm:^1.10.1"
     vite: "npm:^8.1.4"
     vite-plugin-solid: "npm:^2.11.12"
   languageName: unknown
@@ -3805,24 +3832,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vike-lite-solid@npm:^1.9.3":
-  version: 1.9.3
-  resolution: "vike-lite-solid@npm:1.9.3"
+"vike-lite-solid@npm:^1.10.1":
+  version: 1.10.1
+  resolution: "vike-lite-solid@npm:1.10.1"
   peerDependencies:
     solid-js: "*"
     vike-lite: "*"
     vite: ">=8"
     vite-plugin-solid: ">=2"
-  checksum: 10c0/1dc1e41f1c844f2fd3ab64689187988a94196b3b4175b0e66c85c14c32e3996262ba39f43ece2d7a3a61e370d2ef38d41ae08260f2e186d778876e58b9b54308
+  checksum: 10c0/9901b7aca33641f0ea7ec511179c83e6e73bc8b058d3983102bb694d3d131f9c03fb90c93bcbfad6893948057139ba45dcc51755e36204ad47a49cf66dd06a5f
   languageName: node
   linkType: hard
 
-"vike-lite@npm:^1.14.0":
-  version: 1.14.0
-  resolution: "vike-lite@npm:1.14.0"
+"vike-lite@npm:^1.15.3":
+  version: 1.15.3
+  resolution: "vike-lite@npm:1.15.3"
   peerDependencies:
     vite: ">=8"
-  checksum: 10c0/917aec5c3191824f9428932722d3d523fd28f394cb9fe7a51036ab3775773668235f1cabe253e8769b1f969437a35a2e58c25802dfca90458f9964fbb22bd251
+  checksum: 10c0/610c02dd50c5d272ab4e8718bcd3f4e46e73dc35d8ea4f9dc0d034608115cc91654fcceb0256f233ac55623b587f257d1fa337d9ac4dd2447d9fee1b382eaa0f
   languageName: node
   linkType: hard
 
@@ -3994,6 +4021,15 @@ __metadata:
   version: 5.0.0
   resolution: "yallist@npm:5.0.0"
   checksum: 10c0/a499c81ce6d4a1d260d4ea0f6d49ab4da09681e32c3f0472dee16667ed69d01dae63a3b81745a24bd78476ec4fcf856114cb4896ace738e01da34b2c42235416
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "yaml@npm:2.9.0"
+  bin:
+    yaml: bin.mjs
+  checksum: 10c0/f340718df45e97a9551b9bf9dac61c80050bc464513b710debfb5067c380c8472e3b67809cffacb4ab5ffb5e66ef9310816c88b05f371cec60abfedd8c88e0a2
   languageName: node
   linkType: hard
 
