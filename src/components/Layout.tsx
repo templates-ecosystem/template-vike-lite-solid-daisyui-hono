@@ -1,5 +1,5 @@
-import './styles.css'
-import './tailwind.css'
+import '@/styles/styles.css'
+import '@/styles/tailwind.css'
 
 import type { JSX } from 'solid-js'
 
@@ -40,7 +40,7 @@ function Content(props: { children: JSX.Element }) {
   )
 }
 
-export function LayoutDefault(props: { children: JSX.Element }) {
+export function Layout(props: { children: JSX.Element }) {
   return (
     <div
       style={{
